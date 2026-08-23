@@ -1,0 +1,152 @@
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background:
+    radial-gradient(circle at 20% 20%, #000000 0, transparent 75%),
+    radial-gradient(circle at 80% 70%, #000001 0, transparent 75%),
+    #8453c7;
+
+  color: #171717;
+
+  font-family:
+    "Chalkboard SE",
+    "Comic Sans MS",
+    cursive;
+
+  font-weight: 700;
+}
+
+.card {
+  width: min(800px, 100%);
+
+  padding: 40px;
+
+  background: #fff;
+
+  border: 2px solid #171717;
+  border-radius: 30px;
+
+  box-shadow: 8px 8px 0 #171717;
+}
+
+.card h1 {
+  margin: 20px 0 18px;
+
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+
+  color: #171717;
+}
+
+.card h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-size: 28px;
+
+  color: #7445a9f2;
+}
+
+.card p {
+  margin: 0 0 18px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #171717;
+}
+
+.card a {
+  color: #171717;
+}
+
+.back {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  background: #fff;
+
+  color: #171717;
+  text-decoration: none;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 3px 3px 0 #171717;
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background 150ms ease;
+}
+
+.back:hover {
+  transform: translate(-2px, -2px);
+
+  box-shadow: 5px 5px 0 #171717;
+
+  background: #0bebacd8;
+}
+
+.highlight {
+  display: inline-block;
+
+  padding: 2px 8px;
+
+  background: #bb4610;
+
+  border-radius: 8px;
+
+  color: #171717;
+}
+
+.section {
+  margin-top: 28px;
+
+  padding: 20px;
+
+  border: 2px solid #171717;
+  border-radius: 20px;
+
+  background: #fff;
+
+  box-shadow: 4px 4px 0 #171717;
+}
+
+.section:hover {
+  transform: translate(-2px, -2px);
+
+  box-shadow: 7px 7px 0 #171717;
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .card {
+    padding: 28px 22px;
+  }
+
+  .card h1 {
+    font-size: 48px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
