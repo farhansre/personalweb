@@ -1,0 +1,152 @@
+.page {
+  min-height: 100vh;
+  padding: 40px;
+
+  background:
+    radial-gradient(circle at 20% 20%, #000000 0, transparent 75%),
+    radial-gradient(circle at 80% 70%, #000001 0, transparent 75%),
+    #8453c7;
+
+  font-family:
+    "Chalkboard SE",
+    "Comic Sans MS",
+    cursive;
+
+  color: #171717;
+}
+
+.back {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  background: #fff;
+  color: #171717;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 3px 3px 0 #171717;
+
+  text-decoration: none;
+}
+
+.buttonRoom {
+  min-height: calc(100vh - 120px);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.count {
+  color: #fff;
+
+  font-size: clamp(100px, 25vw, 300px);
+  font-weight: 700;
+
+  line-height: 0.8;
+  letter-spacing: -12px;
+
+  text-align: center;
+}
+
+.bigButton {
+  padding: 24px 60px;
+
+  background: #fff;
+
+  color: #171717;
+
+  font: inherit;
+  font-size: 30px;
+  font-weight: 700;
+
+  border: 3px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 8px 8px 0 #171717;
+
+  cursor: pointer;
+
+  transition:
+    transform 100ms ease,
+    box-shadow 100ms ease,
+    background 100ms ease;
+}
+
+.bigButton:hover {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 11px 11px 0 #171717;
+
+  background: #bb4610;
+}
+
+.bigButton:active {
+  transform: translate(5px, 5px);
+
+  box-shadow: 2px 2px 0 #171717;
+}
+
+.login {
+  min-height: calc(100vh - 120px);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+}
+
+.login h1 {
+  color: #fff;
+
+  font-size: clamp(60px, 12vw, 130px);
+
+  margin: 0 0 20px;
+}
+
+.login input {
+  width: min(350px, 90%);
+
+  padding: 16px;
+
+  background: #fff;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 4px 4px 0 #171717;
+
+  font: inherit;
+  font-size: 18px;
+
+  text-align: center;
+}
+
+.login button {
+  padding: 12px 24px;
+
+  background: #0bebacd8;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 4px 4px 0 #171717;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.error {
+  color: #fff;
+}

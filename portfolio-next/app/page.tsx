@@ -42,6 +42,12 @@ export default function Home() {
         <Link href="/hear" className={`${styles.node} ${styles.music}`}>
           Hear
         </Link>
+        <Link
+  href="/button"
+  className={`${styles.node} ${styles.buttonNode}`}
+>
+  the button
+</Link>
 
         <Link
           href="/Experience/Academic"
