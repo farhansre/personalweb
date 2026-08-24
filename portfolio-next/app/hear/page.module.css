@@ -1,0 +1,355 @@
+.page {
+  min-height: 100vh;
+
+  padding: 40px;
+
+  background:
+    radial-gradient(circle at 20% 20%, #000000 0, transparent 75%),
+    radial-gradient(circle at 80% 70%, #000001 0, transparent 75%),
+    #8453c7;
+
+  color: #171717;
+
+  font-family:
+    "Chalkboard SE",
+    "Comic Sans MS",
+    cursive;
+
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Home button */
+
+.back {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  background: #fff;
+  color: #171717;
+
+  text-decoration: none;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 3px 3px 0 #171717;
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background 150ms ease;
+}
+
+.back:hover {
+  transform: translate(-2px, -2px);
+
+  box-shadow: 5px 5px 0 #171717;
+
+  background: #0bebacd8;
+}
+
+/* Page title */
+
+.wrapper h1 {
+  margin: 36px 0 28px;
+
+  color: #fff;
+
+  font-size: clamp(48px, 9vw, 90px);
+  line-height: 0.9;
+  letter-spacing: -3px;
+}
+
+/* Three equal-width cards */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+
+  width: 100%;
+
+  align-items: stretch;
+}
+
+/* Main cards */
+
+.card {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  min-height: 760px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px;
+
+  background: #fff;
+
+  border: 2px solid #171717;
+  border-radius: 28px;
+
+  box-shadow: 8px 8px 0 #171717;
+
+  overflow: hidden;
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background 150ms ease;
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 11px 11px 0 #171717;
+}
+
+/* Hover colors */
+
+.card:nth-child(1):hover {
+  background: #bb4610;
+}
+
+.card:nth-child(2):hover {
+  background: #0bebacd8;
+}
+
+.card:nth-child(3):hover {
+  background: #7445a9;
+}
+
+/* Card typography */
+
+.card h2 {
+  margin: 0 0 18px;
+
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+
+  color: #171717;
+}
+
+.card p {
+  margin: 0 0 18px;
+
+  font-size: 17px;
+  line-height: 1.6;
+
+  color: #171717;
+}
+
+/* Make embedded media respect card width */
+
+.videoEmbed,
+.spotifyEmbed {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+/* YouTube */
+
+.videoEmbed {
+  margin: 4px 0 24px;
+
+  aspect-ratio: 16 / 9;
+
+  border: 2px solid #171717;
+  border-radius: 14px;
+
+  background: #000;
+}
+
+.videoEmbed iframe {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: 100%;
+
+  border: 0;
+}
+
+/* Spotify */
+
+.spotifyEmbed {
+  margin: 4px 0 24px;
+
+  border: 2px solid #171717;
+  border-radius: 14px;
+
+  background: #171717;
+}
+
+.spotifyEmbed iframe {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: 352px;
+
+  border: 0;
+}
+
+/* Work note */
+
+.workNote {
+  margin-top: auto !important;
+
+  padding-top: 18px;
+
+  font-size: 18px !important;
+  font-weight: 700;
+
+  color: #7445a9f2 !important;
+}
+
+/* yourdovehands button */
+
+.button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+
+  padding: 12px 18px;
+
+  background: #fff;
+  color: #171717;
+
+  text-decoration: none;
+
+  border: 2px solid #171717;
+  border-radius: 999px;
+
+  box-shadow: 4px 4px 0 #171717;
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background 150ms ease;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+
+  box-shadow: 6px 6px 0 #171717;
+
+  background: #bb4610;
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 36px auto 0;
+
+  text-align: center;
+
+  color: #fff;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: #fff;
+
+  text-decoration: none;
+
+  transition: color 150ms ease;
+}
+
+.contact a:hover {
+  color: #0bebacd8;
+
+  text-decoration: underline;
+}
+
+/* Tablet / smaller desktop */
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+
+  .workNote {
+    margin-top: 20px !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 20px;
+  }
+
+  .wrapper h1 {
+    margin-top: 30px;
+
+    font-size: 56px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 22px;
+
+    border-radius: 22px;
+  }
+
+  .card h2 {
+    font-size: 28px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .spotifyEmbed iframe {
+    height: 352px;
+  }
+
+  .contact {
+    margin-top: 30px;
+
+    font-size: 16px;
+
+    overflow-wrap: anywhere;
+  }
+}

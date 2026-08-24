@@ -39,7 +39,7 @@ export default function Home() {
           Doing/Did
         </Link>
 
-        <Link href="/Hear" className={`${styles.node} ${styles.music}`}>
+        <Link href="/hear" className={`${styles.node} ${styles.music}`}>
           Hear
         </Link>
 
@@ -51,7 +51,7 @@ export default function Home() {
         </Link>
 
         <Link
-          href="/Imirí"
+          href="/imiri"
           className={`${styles.node} ${styles.ireland}`}
         >
           Imirí
@@ -82,6 +82,12 @@ export default function Home() {
     aria-label="Bandcamp"
   >
     ♫
+  </a>
+</div>
+<div className={styles.contact}>
+  contact:{" "}
+  <a href="mailto:farhansreejansandbox@gmail.com">
+    farhansreejansandbox@gmail.com
   </a>
 </div>
     </main>

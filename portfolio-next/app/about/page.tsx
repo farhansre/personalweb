@@ -11,7 +11,7 @@ export default function About() {
         <br></br>
         <h1>About</h1>
 
-        {" Hello. I am Farhan Sreejan. I grew up in The Bronx and am currently finishing up my undergrad @ Boston College. To pass time I program and make sounds either by myself or with my loved ones. Looking ahead to postgraduate studies, employment, and/or venturings that come my way :)"}
+        {" Hello. I am Farhan Sreejan. I grew up in The Bronx and am currently finishing up my undergrad @ Boston College. To pass time I program and make sounds either by myself or with my loved ones. Looking ahead to postgraduate studies, employment, and/or venturings that are possible."}
 
       </div>
     </main>

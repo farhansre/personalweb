@@ -23,7 +23,7 @@ export default function ExperienceAcademic() {
             rel="noopener noreferrer"
             className={styles.button}
           >
-            Open Resume ↗
+            Open Sesame/Resume ↗
           </a>
 
           <a
