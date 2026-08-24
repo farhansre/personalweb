@@ -262,3 +262,53 @@
   color: #0bebacd8;
   text-decoration: underline;
 }
+@media (max-width: 700px) {
+  .map {
+    display: flex;
+    min-height: 100vh;
+
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 16px;
+
+    padding: 32px 32px 120px;
+  }
+
+  .node,
+  .nameNode {
+    position: static;
+
+    width: auto;
+    height: auto;
+
+    transform: none;
+  }
+
+  .connections {
+    display: none;
+  }
+
+  .socials,
+  .contact {
+    position: static;
+
+    transform: none;
+
+    margin-top: 20px;
+
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nameNode:hover,
+  .about:hover,
+  .works:hover,
+  .music:hover,
+  .experience:hover,
+  .ireland:hover,
+  .imiri:hover {
+    transform: none;
+  }
+}
