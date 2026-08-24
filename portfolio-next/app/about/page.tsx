@@ -13,7 +13,7 @@ export default function About() {
         <br></br>
         <Image
         alt="Farhan Sreejan"
-          src="/farbouty.jpg"
+          src="/farbouty.png"
           width={300}
           height={300}
           className={styles.photo}
