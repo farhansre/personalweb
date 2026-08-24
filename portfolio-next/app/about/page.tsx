@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import Image from "next/image";
+
 
 export default function About() {
   return (
@@ -9,6 +11,13 @@ export default function About() {
           ← Home
         </Link>
         <br></br>
+        <Image
+        alt="Farhan Sreejan"
+          src="/farbouty.jpg"
+          width={300}
+          height={300}
+          className={styles.photo}
+        />
         <h1>About</h1>
 
         {" Hello. I am Farhan Sreejan. I grew up in The Bronx and am currently finishing up my undergrad @ Boston College. To pass time I program and make sounds either by myself or with my loved ones. Looking ahead to postgraduate studies, employment, and/or venturings that are possible."}
